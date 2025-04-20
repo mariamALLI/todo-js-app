@@ -15,7 +15,7 @@ export function createListItem(todo) {
   listItem.append(todoDeleteEl);
 
   // Add edit functionality
-  addEditFunctionality(listItem, todoDeleteEl, todo);
+  addEditFunctionality(listItem, todoDeleteEl, todo.id);
 
   return listItem;
 }

@@ -10,28 +10,32 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <h2>Todo App</h2>
-    <form id="todoForm">
-      <div class="form-input">
-          <label for="todo"></label>
-          <input
-            type="text"
-            placeholder="enter new todo"
-            id="todo"
-            required
-            name="todo"
-            minlength="2"
-            maxlength="100"
-          />
-      </div>
-        <button>Create Todo</button>
-    </form>
+    <header>
+      <h2>Todo App</h2>
+        <form id="todoForm">
+          <div class="form-input">
+              <label for="todo"></label>
+              <input
+                type="text"
+                placeholder="enter new todo"
+                id="todo"
+                required
+                name="todo"
+                minlength="2"
+                maxlength="100"
+              />
+          </div>
+            <button>Create Todo</button>
+        </form>
+  </header>
 
-      <section id="displayTodo">
-        <ol id="todoList">
-          <!-- display todo item -->
-        </ol>
-      </section>
+    <main>
+        <section id="displayTodo">
+          <ol id="todoList">
+            <!-- display todo item -->
+          </ol>
+        </section>
+    </main>
 
     <script type="module" src="./index.js"></script>
   </body>

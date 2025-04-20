@@ -13,7 +13,9 @@ import {
     // Delete functionality
     todoDeleteEl.onclick = () => {
       listItem.remove();
-      const todos = getTodosFromLocalStorage().filter((todo) => todo !== id);
+      //filter todos to remove the deleted todo
+      const todos = getTodosFromLocalStorage().filter((todo) => todo.id !== id);
+      // Save the updated todos to local storage
       saveTodoToLocalStorage(todos);
     };
   
