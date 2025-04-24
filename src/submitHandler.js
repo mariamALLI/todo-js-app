@@ -26,6 +26,7 @@ export function todoSubmitHandler(event) {
     text: todoValue,
   };
 
+  
   const todos = getTodosFromLocalStorage();
   // todos.push(todoValue);
   todos.push(newTodo);
@@ -50,8 +51,8 @@ export function loadTodos(todoList) {
   todos.forEach((todo) => {
     console.log("Creating list item for:", todo); // Debug
     const listItem = createListItem(todo); // now todo is an object
-    todoList.appendChild(listItem);
+    todoList.appendChild(listItem); 
   });
 }
 
-export const PI = 22 / 7;
+// export const PI = 22 / 7;
