@@ -54,6 +54,12 @@ input[type="text"]:focus::placeholder {
   margin-top: 2rem;
  line-height: 2;
  color: lightgray;
+ list-style: none;
+}
+
+.list {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
 }
 
 .deleteBtn {
@@ -74,6 +80,41 @@ button {
 }
 button:hover {
   background-color: #253e57;
+}
+
+/* Style for the checkbox */
+.list input[type="checkbox"] {
+  appearance: none; /* Remove default checkbox styling */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  top: 8px;
+  left: -10px;
+}
+
+.list input[type="checkbox"]:checked {
+  background-color: gold; /* Set background color to gold when checked */
+  border-color: gold; /* Optional: Change border color when checked */
+}
+
+.list input[type="checkbox"]:checked::after {
+  content: "✔"; /* Add a checkmark */
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Style for completed todos */
+.list.completed {
+  text-decoration: line-through;
+  color: gray; /* Optional: Change the text color for completed todos */
 }
 
 
