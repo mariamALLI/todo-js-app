@@ -34,7 +34,7 @@ export function todoSubmitHandler(event) {
 
   // Create a new list item and append it to the todo list
   const listItem = createListItem(newTodo);
-  todoList.prepend(listItem);
+  todoList.append(listItem);
 
   // Reset the form
   todoForm.reset();
