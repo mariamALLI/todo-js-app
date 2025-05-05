@@ -5,7 +5,7 @@ import { saveTodoToLocalStorage, getTodosFromLocalStorage } from "./saveTodos.js
 // Function to create a new list item
 export function createListItem(todo) {
   const listItem = document.createElement("li");
-  listItem.classList.add("list");
+  listItem.classList.add("todo-item");
   listItem.setAttribute("data-id", todo.id);
 
   // Create a checkbox

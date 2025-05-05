@@ -57,7 +57,7 @@ input[type="text"]:focus::placeholder {
  list-style: none;
 }
 
-.list {
+.todo-item {
   border-bottom: 1px solid #ccc;
   width: 100%;
 }
@@ -83,7 +83,7 @@ button:hover {
 }
 
 /* Style for the checkbox */
-.list input[type="checkbox"] {
+.todo-item input[type="checkbox"] {
   appearance: none; /* Remove default checkbox styling */
   width: 20px;
   height: 20px;
@@ -96,12 +96,12 @@ button:hover {
   left: -10px;
 }
 
-.list input[type="checkbox"]:checked {
+.todo-item input[type="checkbox"]:checked {
   background-color: gold; /* Set background color to gold when checked */
   border-color: gold; /* Optional: Change border color when checked */
 }
 
-.list input[type="checkbox"]:checked::after {
+.todo-item input[type="checkbox"]:checked::after {
   content: "✔"; /* Add a checkmark */
   color: white;
   font-size: 14px;
@@ -112,7 +112,7 @@ button:hover {
 }
 
 /* Style for completed todos */
-.list.completed {
+.todo-item.completed {
   text-decoration: line-through;
   color: gray; /* Optional: Change the text color for completed todos */
 }
